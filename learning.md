@@ -26,6 +26,10 @@ from .models import Task
 
 class TaskAdmin(admin.ModelAdmin):
     pass
+    # list_display use for show which column i can show
+    list_display = ('title', 'description', 'created_at', 'updated_at')
+
+
 admin.site.register(Task, TaskAdmin)
 ```
 
